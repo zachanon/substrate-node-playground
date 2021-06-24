@@ -46,59 +46,6 @@ version = '3.0.0'
 optional = true
 version = '0.3.1'
 
-[dependencies.pallet-aura]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-balances]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-grandpa]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.1.0'
-
-[dependencies.pallet-randomness-collective-flip]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-sudo]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-template]
-default-features = false
-path = '../pallets/template'
-version = '3.0.0'
-
-[dependencies.pallet-timestamp]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-transaction-payment]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
-[dependencies.pallet-transaction-payment-rpc-runtime-api]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-rev = 'd6c33e7ec313f9bd5e319dc0a5a3ace5543f9617'
-version = '3.0.0'
-
 [dependencies.sp-api]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -188,9 +135,6 @@ runtime-benchmarks = [
     'frame-system-benchmarking',
     'frame-system/runtime-benchmarks',
     'hex-literal',
-    'pallet-balances/runtime-benchmarks',
-    'pallet-template/runtime-benchmarks',
-    'pallet-timestamp/runtime-benchmarks',
     'sp-runtime/runtime-benchmarks',
 ]
 std = [
@@ -199,15 +143,6 @@ std = [
     'frame-support/std',
     'frame-system-rpc-runtime-api/std',
     'frame-system/std',
-    'pallet-aura/std',
-    'pallet-balances/std',
-    'pallet-grandpa/std',
-    'pallet-randomness-collective-flip/std',
-    'pallet-sudo/std',
-    'pallet-template/std',
-    'pallet-timestamp/std',
-    'pallet-transaction-payment-rpc-runtime-api/std',
-    'pallet-transaction-payment/std',
     'sp-api/std',
     'sp-block-builder/std',
     'sp-consensus-aura/std',
